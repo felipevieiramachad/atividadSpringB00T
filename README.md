@@ -39,17 +39,5 @@ O sistema possui as funcionalidades de:
    Exibe todos os funcionários cadastrados em uma tabela, com opções para editar, visualizar ou excluir.
 
 ---
-src/
- ├─ main/
- │  ├─ java/
- │  │  └─ com.exemplo.cadastro/
- │  │       ├─ controller/    # Controladores Spring MVC
- │  │       ├─ model/         # Modelos de dados (Funcionário)
- │  │       └─ repository/    # Interfaces de acesso a dados (H2)
- │  └─ resources/
- │      ├─ static/            # Arquivos CSS e JS
- │      └─ templates/         # Páginas HTML (Thymeleaf)
- └─ test/                     # Testes automatizados
----
 
 http://localhost:8080/funcionarios
