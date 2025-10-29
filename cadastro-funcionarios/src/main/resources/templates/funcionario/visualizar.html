@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Detalhes do Funcionário</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div class="container mt-5">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h1 class="card-title text-center mb-4">Detalhes do Funcionário</h1>
+
+            <div class="row mb-2"><b class="col-3">Nome:</b> <span class="col-9" th:text="${funcionario.nome}"></span></div>
+            <div class="row mb-2"><b class="col-3">Idade:</b> <span class="col-9" th:text="${funcionario.idade}"></span></div>
+            <div class="row mb-2"><b class="col-3">Altura:</b><span class="col-9" th:text="${funcionario.altura != null} ? ${#strings.replace(funcionario.altura.toString(), '.', ',')} + ' cm' : ''"></span></div>
+            <div class="row mb-2"><b class="col-3">Raça:</b> <span class="col-9" th:text="${funcionario.raca}"></span></div>
+            <div class="row mb-2"><b class="col-3">CPF:</b> <span class="col-9" th:text="${funcionario.cpf}"></span></div>
+            <div class="row mb-2"><b class="col-3">Setor:</b> <span class="col-9" th:text="${funcionario.setor}"></span></div>
+            <div class="row mb-2"><b class="col-3">Telefone:</b> <span class="col-9" th:text="${funcionario.telefone}"></span></div>
+            <div class="row mb-2"><b class="col-3">E-mail:</b> <span class="col-9" th:text="${funcionario.email}"></span></div>
+            <div class="row mb-2"><b class="col-3">Estado Civil:</b> <span class="col-9" th:text="${funcionario.estadoCivil}"></span></div>
+            <div class="row mb-2"><b class="col-3">Escolaridade:</b> <span class="col-9" th:text="${funcionario.escolaridade}"></span></div>
+            <div class="row mb-2"><b class="col-3">Gênero:</b> <span class="col-9" th:text="${funcionario.genero}"></span></div>
+
+            <a th:href="@{/funcionarios}" class="btn btn-secondary mt-3">Voltar</a>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
