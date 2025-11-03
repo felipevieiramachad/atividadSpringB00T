@@ -39,5 +39,5 @@ O sistema possui as funcionalidades de:
    Exibe todos os funcionários cadastrados em uma tabela, com opções para editar, visualizar ou excluir.
 
 ---
-
-http://localhost:8080/funcionarios
+## Prototipagem das Telas: https://www.figma.com/proto/A1fnXHIbAb8EsCBIIIVA29/Untitled?node-id=3-140&p=f&t=U3i5zQfxruSVsPoA-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1
+## http://localhost:8080/funcionarios
